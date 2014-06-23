@@ -20,7 +20,11 @@ static char itemKey;
 }
 
 - (NGTabBarItem *)ng_tabBarItem {
-    return objc_getAssociatedObject(self, &itemKey);
+    id tabBarItem = objc_getAssociatedObject(self, &itemKey);
+    if (tabBarItem) {
+        return tabBarItem;
+    }
+    return [[NGTabBarItem alloc] init];
 }
 
 - (NGTabBarController *)ng_tabBarController {
