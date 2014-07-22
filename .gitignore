@@ -16,3 +16,5 @@ profile
 
 # osx noise
 .DS_Store
+*.*.save
+
