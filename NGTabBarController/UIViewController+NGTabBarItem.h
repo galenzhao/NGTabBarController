@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NGTabBarItem.h"
 
-
-@class NGTabBarItem;
+//@class NGTabBarItem;
 @class NGTabBarController;
 
 
